@@ -1,0 +1,49 @@
+﻿@page
+@model LoginModel
+
+@* @{
+    ViewData["Title"] = "Log in";
+} *@
+
+<div class="card" id="login-form">
+   
+    <img src="/Images/loginForm-image.jpeg" class="card-img-top" alt="...">
+    <h1>LOG IN</h1>
+    <div class="card-body">
+        <form id="account" method="post">
+            <div class="row">
+                <div class="col">
+                    <label asp-for="Input.Email"></label>
+                    <input asp-for="Input.Email" class="form-control" aria-required="true" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label asp-for="Input.Password"></label>
+                    <input asp-for="Input.Password" class="form-control" aria-required="true" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+            </div>
+
+            <br />
+            <div class="row">
+                <div class="col">
+                    <button type="submit" class="btn btn-info">Log in</button>
+                </div>
+            </div>
+          <br />
+          <div class="row">
+              <div class="col">
+                    <p>Don't have an account? <a asp-area="Identity" asp-page="/Account/Register">Register</a></p>
+                </div>
+          </div>
+        </form>
+        
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -20,3 +20,92 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+#register-form{
+    max-width:550px;
+    margin:auto;
+    border-color:#7c7777;
+ 
+}
+
+#register-form label {
+    font-family: "Trirong";
+    /*font-family:Georgia;*/
+}
+
+#register-form img{
+    position:relative;
+    
+}
+
+    
+#register-form h1{
+    color:white;
+    position:absolute;
+    top:15%;
+    left:15%;
+    font-family:Georgia;
+}
+        
+
+#register-form input {
+    height: 45px;        
+    border-color:#978b8b;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#register-form button {
+ width: 100%;
+ background-color: #258cfb;
+ font-family: Georgia;     
+ font-size:20px;   
+ color: whitesmoke;        
+}
+
+#login-form {
+    max-width: 450px;
+    margin: auto;
+    border-color: #7c7777;
+}
+
+#login-form label {
+   font-family: "Trirong";
+}
+
+#login-form img {
+    position: relative;
+    
+}
+
+#login-form h1 {
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    font-family: Georgia;
+}
+
+#login-form input {
+    height: 45px;
+    border-color: #978b8b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#login-form button {
+width: 100%;
+background-color: #258cfb;
+font-family: Georgia;
+font-size: 20px;
+color: white;
+}
+
+#login-form p{
+    font-size:17px;
+    margin-left:5px;
+}
+
+    #login-form a {
+        text-decoration: none;
+        color: #0653f2;
+        
+    }

@@ -4,6 +4,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
@@ -75,6 +76,27 @@ namespace RentalCars.Areas.Identity.Pages.Account
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
+            /// 
+
+            [Required]
+            [Display(Name = "Full Name")]
+            public string FullName { get; set; }
+
+            [Required]
+            public string Address { get; set; }
+
+            [Required]
+            public string City { get; set; }
+
+            [Required]
+            [Display(Name ="Zip Code")]
+            public string ZipCode { get; set; }
+
+            [Required]
+            [Display(Name ="Phone")]
+            public string PhoneNumber { get; set; }
+
+
             [Required]
             [EmailAddress]
             [Display(Name = "Email")]
@@ -114,7 +136,14 @@ namespace RentalCars.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 var user = CreateUser();
+                user.FullName = Input.FullName;
+                user.Address = Input.Address;
+                user.City = Input.City;
+                user.ZipCode = Input.ZipCode;
+                user.PhoneNumber = Input.PhoneNumber;
+                user.IsAdmin = false;
                 
+
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
