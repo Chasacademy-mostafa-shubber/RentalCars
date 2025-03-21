@@ -1,14 +1,12 @@
 ﻿@page
 @model RegisterModel
-@{
-    ViewData["Title"] = "Register";
-}
+
 
 
 <div class="card" id="register-form">
     
     <img src="~/Images/registerForm-image.jpg" />
-    <h1>CREATE ACCOUNT</h1>
+    <h1>REGISTER</h1>
     <div class="card-body">
         <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
             <div class="row">
@@ -68,7 +66,7 @@
             <br />
             <div class="row">
                 <div class="col">
-                    <button type="submit" class="btn btn-info">Sign up</button>
+                    <button type="submit" class="btn btn-info">Submit</button>
                 </div>
                 
             </div>
