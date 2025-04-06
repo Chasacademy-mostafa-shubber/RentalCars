@@ -104,8 +104,74 @@ color: white;
     margin-left:5px;
 }
 
-    #login-form a {
-        text-decoration: none;
-        color: #0653f2;
+#login-form a {
+    text-decoration: none;
+    color: #0653f2;
         
+}
+
+
+
+#nav-image {
+    height: 400px;
+    background-image: url('/Images/navbar-image.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar-brand {
+    color: white;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.navbar-brand:hover {
+    color: white;
+   
+}
+
+.navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.nav-link {
+    color: white;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 17px;
+    
+}
+
+
+.nav-link:hover{
+    color:white;
+   
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255)' stroke-linecap='round'  stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+   
+}
+
+
+.navbar-collapse-background{
+    background-color:white;
+}
+
+.navlink-collapse-color{
+    color:black;
+    font-family: "trirong";
+}
+
+.navbaricon-collapse-color {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0)' stroke-linecap='round'  stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media only screen and (max-width: 900px) {
+
+    .navbar:hover{
+        background-color:black;
     }
+
+   
+}
