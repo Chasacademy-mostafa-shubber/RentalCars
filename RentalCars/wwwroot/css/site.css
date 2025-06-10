@@ -8,9 +8,6 @@ html {
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
 
 html {
   position: relative;
@@ -22,110 +19,95 @@ body {
 }
 
 #register-form{
-    max-width:550px;
     margin:auto;
-    border-color:#7c7777;
- 
+    max-width:600px;
+}
+
+#register-form h2 {
+    font-family:'Montserrat', sans-serif;
+    color: #3c3b3b;
 }
 
 #register-form label {
-    font-family: "Trirong";
-    /*font-family:Georgia;*/
+    color: #090707;
+    font-family: Arial;
 }
 
-#register-form img{
-    position:relative;
-    
+#register-form input{
+    border-radius:0;
+    border-color:#383838;
+    box-shadow:none;
 }
 
-    
-#register-form h1{
+
+
+#register-form hr{
+    height:5px;
+    color:#535050;
+}
+
+#register-form button{
     color:white;
-    position:absolute;
-    top:15%;
-    left:15%;
-    font-family:Georgia;
-}
-        
-
-#register-form input {
-    height: 45px;        
-    border-color:#978b8b;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-#register-form button {
- width: 100%;
- background-color: #258cfb;
- font-family: Georgia;     
- font-size:20px;   
- color: whitesmoke;        
-}
-
-#login-form {
-    max-width: 450px;
-    margin: auto;
-    border-color: #7c7777;
-}
-
-#login-form label {
-   font-family: "Trirong";
-}
-
-#login-form img {
-    position: relative;
+    font-family:Arial;
+    width:30%;
+    border-radius:0;
     
 }
 
-#login-form h1 {
-    color: white;
-    position: absolute;
-    top: 15%;
-    left: 15%;
-    font-family: Georgia;
+#login-form{
+    margin:auto;
+    max-width:400px;
+}
+
+#login-form h2 {
+   font-family: 'Montserrat', sans-serif;
+   color: #3c3b3b;
+}
+
+#login-form hr {
+    height: 5px;
+    color: #535050;
 }
 
 #login-form input {
-    height: 45px;
-    border-color: #978b8b;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 0;
+    border-color: #383838;
+    box-shadow: none;
+}
+
+#login-form label {
+    color: #090707;
+    font-family:Arial;
 }
 
 #login-form button {
-width: 100%;
-background-color: #258cfb;
-font-family: Georgia;
-font-size: 20px;
-color: white;
+    color: white;
+    font-family: Arial;
+    width: 30%;
+    border-radius: 0;
 }
 
-#login-form p{
-    font-size:17px;
-    margin-left:5px;
-}
-
-#login-form a {
-    text-decoration: none;
-    color: #0653f2;
-        
-}
-
-
-
-#nav-image {
-    height: 400px;
-    background-image: url('/Images/navbar-image.webp');
-    background-repeat: no-repeat;
+#navbar-div {
+    background-image: url("/Images/navbar-image.webp");
+    height: 500px;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+
 }
+
+
+.navbar{
+    background-color:white;
+}
+
 
 .navbar-brand {
     color: white;
     font-family: "Fira Sans", sans-serif;
 }
 
-.navbar-brand:hover {
+ .navbar-brand:hover {
     color: white;
    
 }
@@ -136,42 +118,85 @@ color: white;
 }
 
 .nav-link {
-    color: white;
-    font-family: "Fira Sans", sans-serif;
+    color: #313131;
+    font-family: 'Montserrat', sans-serif;
     font-size: 17px;
+   
+}
+
+
+.nav-link:hover {
+    color: #313131;
+}
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0)' stroke-linecap='round'  stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  
     
 }
 
 
-.nav-link:hover{
-    color:white;
-   
+
+tbody td a {
+    color: white;
+    text-decoration: none;
 }
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255)' stroke-linecap='round'  stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-   
+tbody td a:hover{
+    color:#258cfb;
 }
 
-
-.navbar-collapse-background{
-    background-color:white;
+#Car-form{
+    margin:auto;
+    max-width:700px;
+    
 }
 
-.navlink-collapse-color{
-    color:black;
-    font-family: "trirong";
+#Car-form h2 {
+    font-family: 'Montserrat', sans-serif;
+    color:#3c3b3b;
+    
 }
 
-.navbaricon-collapse-color {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0)' stroke-linecap='round'  stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+#Car-form label {
+    font-family: Arial;
+    color: #090707;
 }
 
-@media only screen and (max-width: 900px) {
-
-    .navbar:hover{
-        background-color:black;
-    }
-
-   
+#Car-form input{
+    border-radius:0;
+    border:1px solid #746e6e;
+    font-family:Georgia;
+   box-shadow:none;
 }
+
+#Car-form select{
+    border-radius:0;
+    font-family: Arial;
+    border:1px solid #746e6e;
+    box-shadow:none;
+}
+
+#Car-form input::placeholder{
+    font-family:Arial;   
+    font-size:15px;
+    color:#807e7e;
+}
+
+#Car-form hr{
+    height:5px;
+    color:#3c3b3b;
+}
+
+#Car-form button{
+    border-radius:0;
+    width:20%;
+    font-family:Arial;
+}
+
+#Carlist-addButton{
+    border-radius:0;
+    font-family:Arial;
+}
+

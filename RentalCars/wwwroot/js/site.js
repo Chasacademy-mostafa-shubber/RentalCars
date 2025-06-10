@@ -4,10 +4,6 @@
 // Write your JavaScript code.
 
 
-//$(document).ready(function () {
-//    $(".navbar-toggler").click(function () {
-//        $(".navbar").toggleClass("navbar-collapse-background");
-//        $(".nav-link").toggleClass("navlink-collapse-color");
-//        $(".navbar-toggler-icon").toggleClass("navbaricon-collapse-color");
-//    });
-//});
+
+
+

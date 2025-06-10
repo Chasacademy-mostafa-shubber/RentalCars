@@ -127,6 +127,8 @@ namespace RentalCars.Areas.Identity.Pages.Account
         {
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+
+            ViewData["NavTitle"] = "Register";
         }
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
