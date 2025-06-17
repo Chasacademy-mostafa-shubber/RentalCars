@@ -16,7 +16,10 @@ html {
 
 body {
   margin-bottom: 60px;
+
 }
+
+
 
 #register-form{
     margin:auto;
@@ -89,7 +92,7 @@ body {
 
 #navbar-div {
     background-image: url("/Images/navbar-image.webp");
-    height: 500px;
+    height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -199,4 +202,28 @@ tbody td a:hover{
     border-radius:0;
     font-family:Arial;
 }
+
+#Cars-card {
+
+    
+    border:1px solid #787272;
+    margin:7px;
+}
+
+.card-img-top{
+    height:200px;
+   
+}
+
+
+
+#Cars-card h5 {
+    font-family: 'Montserrat';
+    color: black;
+}
+
+#Cars-card a:link{
+    text-decoration:none;
+}
+
 

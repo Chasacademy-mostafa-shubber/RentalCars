@@ -1,0 +1,32 @@
+﻿@model IEnumerable<RentalCars.Models.Car>
+
+@{
+    ViewData["Title"] = "Cars";
+}
+
+<div class="container mt-5">
+<div class="row">
+
+    @foreach(var item in Model)
+{
+    <div class="col-md-4">
+
+      
+       <div class="card" id="Cars-card">
+          
+        <img src="@item.ImgUrl" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5>@item.Mark @item.Model</h5>
+           <h5>@item.Year</h5>
+           <h5>@item.Gear</h5>
+           
+        </div>
+            
+      </div>
+    
+
+    </div>
+
+}
+    </div>
+</div>
