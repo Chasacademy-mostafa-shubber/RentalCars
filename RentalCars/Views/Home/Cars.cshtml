@@ -13,17 +13,18 @@
 
       
        <div class="card" id="Cars-card">
-          
+          <a asp-route-id="@item.CarId">
         <img src="@item.ImgUrl" class="card-img-top" alt="...">
         <div class="card-body">
             <h5>@item.Mark @item.Model</h5>
            <h5>@item.Year</h5>
            <h5>@item.Gear</h5>
+            <h5>@item.Price$/day</h5>
            
         </div>
-            
+                    </a>
       </div>
-    
+    <br />
 
     </div>
 

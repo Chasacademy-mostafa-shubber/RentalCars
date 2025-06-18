@@ -27,6 +27,8 @@ public class HomeController : Controller
         return View(_context.Cars.ToList());
     }
 
+    
+
     public IActionResult Privacy()
     {
         return View();
