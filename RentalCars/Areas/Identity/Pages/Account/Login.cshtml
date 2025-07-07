@@ -2,10 +2,11 @@
 @model LoginModel
 
 <div class="container mt-5">
-<form method="post" id="login-form">
+<form method="post" id="Form">
 
         <h2>Log in</h2>
     <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
     <div class="row">
         <div class="col">
                 <label asp-for="Input.Email"></label>

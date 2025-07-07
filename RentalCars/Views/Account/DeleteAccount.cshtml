@@ -1,0 +1,28 @@
+﻿@model PasswordViewModel
+
+<partial name="~/Views/Account/Settings.cshtml" />
+<div class="container mt-5">
+    <form method="post" id="Form">
+
+        <h2>Delete account</h2>
+        <hr />
+        <div class="row">
+            
+                 <div class="col">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" aria-required="true" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+            
+           
+        </div>
+     
+        <br />
+        <div class="row">
+            <div class="col">
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </form>
+</div>
+

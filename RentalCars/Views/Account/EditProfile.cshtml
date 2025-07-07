@@ -1,0 +1,56 @@
+﻿@model ApplicationUser
+
+<partial name="~/Views/Account/Settings.cshtml" />
+<div class="container mt-5">
+    
+    <form id="Form" method="post">
+        <h2>Edit profile</h2>
+        <h5>@ViewData["Message"]</h5>
+        <hr />
+        <div class="row">
+            <div class="col">
+                <label asp-for="FullName"></label>
+                <input asp-for="FullName" class="form-control" aria-required="true" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="col">
+                <label asp-for="Address"></label>
+                <input asp-for="Address" class="form-control" aria-required="true" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label asp-for="City"></label>
+                <input asp-for="City" class="form-control" aria-required="true" />
+                <span asp-validation-for="City" class="text-danger"></span>
+            </div>
+            <div class="col">
+                <label asp-for="ZipCode"></label>
+                <input asp-for="ZipCode" class="form-control" aria-required="true" />
+                <span asp-validation-for="ZipCode" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row">
+          
+            <div class="col">
+                <label asp-for="PhoneNumber"></label>
+                <input asp-for="PhoneNumber" class="form-control" aria-required="true" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+        </div>
+       
+        <br />
+        <div class="row">
+            <div class="col">
+                <button type="submit" class="btn btn-danger">Edit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

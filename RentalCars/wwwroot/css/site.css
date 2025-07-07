@@ -21,74 +21,46 @@ body {
 
 
 
-#register-form{
-    margin:auto;
-    max-width:600px;
+#Form{
+  max-width:500px;
+  margin:auto;
+    
 }
 
-#register-form h2 {
+#Form h2 {
     font-family:'Montserrat', sans-serif;
     color: #3c3b3b;
 }
 
-#register-form label {
+#Form h5 {
+    font-family: 'Montserrat', sans-serif;
+    color:#290de4;
+}
+
+#Form label {
     color: #090707;
     font-family: Arial;
 }
 
-#register-form input{
-    border-radius:0;
-    border-color:#383838;
-    box-shadow:none;
+#Form input, #Form select {
+    border-radius: 0;
+    border-color:#9c9c9c;
+    box-shadow: none;
+    height:45px;   
 }
 
-
-
-#register-form hr{
-    height:5px;
-    color:#535050;
+#Form hr{
+    height:5px;  
 }
 
-#register-form button{
+#Form button{
     color:white;
     font-family:Arial;
-    width:30%;
+    width:40%;
     border-radius:0;
     
 }
 
-#login-form{
-    margin:auto;
-    max-width:400px;
-}
-
-#login-form h2 {
-   font-family: 'Montserrat', sans-serif;
-   color: #3c3b3b;
-}
-
-#login-form hr {
-    height: 5px;
-    color: #535050;
-}
-
-#login-form input {
-    border-radius: 0;
-    border-color: #383838;
-    box-shadow: none;
-}
-
-#login-form label {
-    color: #090707;
-    font-family:Arial;
-}
-
-#login-form button {
-    color: white;
-    font-family: Arial;
-    width: 30%;
-    border-radius: 0;
-}
 
 #navbar-div {
     background-image: url("/Images/navbar-image.webp");
@@ -102,6 +74,7 @@ body {
 
 .navbar{
     background-color:white;
+  
 }
 
 
@@ -123,10 +96,18 @@ body {
 .nav-link {
     color: #313131;
     font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
+    
    
 }
 
+.dropdown-menu .dropdown-item{
+   
+    font-family:'Montserrat', sans-serif;
+}
+
+.nav-link .btn .btn-link {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .nav-link:hover {
     color: #313131;
@@ -139,7 +120,22 @@ body {
     
 }
 
+.nav-tabs{
+    margin:auto;
+    max-width:500px;
+    
+}
 
+.btn-link{
+    font-size:15px;
+    margin-left:10px;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid white;
+    background-color: blue;
+    color: white;
+}
 
 tbody td a {
     color: white;
@@ -150,53 +146,6 @@ tbody td a:hover{
     color:#258cfb;
 }
 
-#Car-form{
-    margin:auto;
-    max-width:700px;
-    
-}
-
-#Car-form h2 {
-    font-family: 'Montserrat', sans-serif;
-    color:#3c3b3b;
-    
-}
-
-#Car-form label {
-    font-family: Arial;
-    color: #090707;
-}
-
-#Car-form input{
-    border-radius:0;
-    border:1px solid #746e6e;
-    font-family:Georgia;
-   box-shadow:none;
-}
-
-#Car-form select{
-    border-radius:0;
-    font-family: Arial;
-    border:1px solid #746e6e;
-    box-shadow:none;
-}
-
-#Car-form input::placeholder{
-    font-family:Arial;   
-    font-size:15px;
-    color:#807e7e;
-}
-
-#Car-form hr{
-    height:5px;
-    color:#3c3b3b;
-}
-
-#Car-form button{
-    border-radius:0;
-    width:20%;
-    font-family:Arial;
-}
 
 #Carlist-addButton{
     border-radius:0;
@@ -229,5 +178,32 @@ tbody td a:hover{
     border-color: #656464;
 }
 
+#EditProfile-card{
+    max-width:700px;
+    margin:auto;
+    border: 2px solid #b0b0b0;
+    padding:8px;
+    border-radius:0;
+}
 
+#EditProfile-card h2{
+    font-family:Georgia;
+    text-align:center;
+    color:#6f6e6e;
+}
+
+#EditProfile-card hr{
+    height:5px;
+}
+
+#EditProfile-card input{
+    height:45px;
+    border-radius:0;
+  
+}
+
+.bi-person-circle{
+    font-size:30px;
+    
+}
 
