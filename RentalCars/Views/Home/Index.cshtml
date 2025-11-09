@@ -1,7 +1,74 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
+﻿@model RentalCars.Models.ViewModel
+
+<div class="container mt-5">
+<form asp-action="Index" method="post">
+        <div class="card" id="SearchCar-Card">
+            <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    
+                        <input class="form-control"  asp-for="StartTime" id="flatpickr" placeholder="Date for rental" />
+                </div>
+                    <div class="col">
+                      
+                        <input class="form-control" asp-for="EndTme" id="flatpickr" placeholder="Date for return" />
+                    </div>
+                    <div class="col">
+                        
+                        <button type="submit" class="btn btn-warning">Search</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+</form>
+
+   
+   
+</div>
+
+
+
+@if (ViewBag.AvailableCars != null)
+{
+   <div class="container mt-5">
+        <div class="row">
+        @foreach (var cars in ViewBag.AvailableCars)
+        {
+           
+             
+                 <div class="col-md-4">
+                    <div class="card" id="Cars-Card">
+                        <img src="@cars.ImgUrl" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">@cars.Mark @cars.Model</h5>
+                            <p class="card-text">
+                                Price: @cars.Price/day<br />
+                                Year: @cars.Year<br />
+                                Gear: @cars.Gear
+                            </p>
+                            <a asp-route-id="@cars.CarId" asp-action="CarDetails" class="btn btn-primary">Select this car</a>
+                        </div>
+                    </div>
+                </div>
+         
+         
+        }
+</div>
+    </div>
 }
 
-<h1>Index</h1>
 
+
+
+
+
+
+@section Scripts{
+
+    <script>
+        flatpickr("#flatpickr", {
+         dateFormat: "Y-m-d",
+         minDate: "today"
+        });
+    </script>
+}

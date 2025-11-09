@@ -11,6 +11,7 @@ namespace RentalCars.Controllers
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _usermanager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+       
 
         public AccountController(ApplicationDbContext context, 
             UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)

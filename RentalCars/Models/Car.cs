@@ -19,5 +19,6 @@ namespace RentalCars.Models
         public string ImgUrl { get; set; }
         [Required]
         public int Price { get; set; }
+        public List<Rental> Rentals { get; set; }
     }
 }

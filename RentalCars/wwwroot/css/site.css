@@ -21,10 +21,9 @@ body {
 
 
 
-#Form{
-  max-width:500px;
-  margin:auto;
-    
+#Form {
+    max-width: 500px;
+    margin: auto;
 }
 
 #Form h2 {
@@ -62,13 +61,13 @@ body {
 }
 
 
+
 #navbar-div {
     background-image: url("/Images/navbar-image.webp");
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 
@@ -152,38 +151,49 @@ tbody td a:hover{
     font-family:Arial;
 }
 
-#Cars-card {
-    border:1px solid #787272;
-  
+
+
+
+
+
+
+
+
+#rentCar-card {
+    max-width: 1000px;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 0;
 }
 
-#Cars-card .card-img-top{
-    height:250px;
-   
+
+
+#rentCar-card img {
+    height: 500px;
 }
 
-
-
-#Cars-card h5 {
-    font-family: 'Montserrat';
-    color: black;
+#rentCar-card .btn {
+        width: 100%;
+        font-size: 20px;
+        border-radius: 0;
 }
 
-#Cars-card a{
-    text-decoration:none;
+#rentCar-card label{
+    font-family:Arial;
 }
 
-#Cars-card:hover {
-    border: 5px solid;
-    border-color: #656464;
-}
-
-#EditProfile-card{
-    max-width:700px;
-    margin:auto;
-    border: 2px solid #b0b0b0;
-    padding:8px;
+#rentCar-card input{
+    height:45px;
     border-radius:0;
+    border-color:#414141;
+}
+
+#EditProfile-card {
+        max-width: 700px;
+        margin: auto;
+        border: 2px solid #b0b0b0;
+        padding: 8px;
+        border-radius: 0;
 }
 
 #EditProfile-card h2{
@@ -207,3 +217,40 @@ tbody td a:hover{
     
 }
 
+#SearchCar-Card {
+    border-radius: 0px;
+    border-color: #f7f7f7;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#SearchCar-Card input {
+     border-radius: 0px;
+     height: 60px;
+     font-family: Georgia;
+     background-color: white;
+     font-weight:600;
+ }
+
+
+#SearchCar-Card .btn{
+    height:60px;
+    width:70%;
+    font-family:Georgia;
+    border-radius:0;
+}
+
+#Cars-Card {
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius:0;
+}
+
+#Cars-Card .card-img-top{
+    height:220px;
+}
+
+#Cars-Card .btn{
+    width:100%;
+    border-radius:0;
+}
