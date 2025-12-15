@@ -1,0 +1,62 @@
+﻿@model RentalCar.Models.Car
+
+
+
+
+<div class="container mt-5">
+    <div class="card" id="Create-Edit-Car-Card">
+        <div class="card-header">
+            <h3>Add new car</h3>
+        </div>
+        <div class="card-body">
+          <form asp-action="Create">
+           <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+          <div class="row">
+            <div class="col-md">
+                <label>Mark</label>
+                <input asp-for="Mark" class="form-control"  />
+            </div>
+              <div class="col-md">
+                 <label>Model</label>
+                 <input asp-for="Model" class="form-control" />
+               </div>      
+          </div>
+                <div class="row">
+                    <div class="col-md">
+                        <label>Year</label>
+                        <input asp-for="Year" class="form-control" />
+                    </div>
+                    <div class="col-md">
+                        <label>Gear</label>
+                        <select asp-for="Gear" class="form-select">
+                            <option value="Automatic">Automatic</option>
+                            <option value="Manual">Manual</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <label>Price</label>
+                        <input asp-for="Price" class="form-control" />
+                    </div>
+                    <div class="col-md">
+                        <label>Url for image</label>
+                        <input asp-for="ImgUrl" class="form-control" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+          </form>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

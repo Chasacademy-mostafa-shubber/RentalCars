@@ -1,0 +1,44 @@
+﻿@model IEnumerable<RentalCar.Models.Car>
+
+
+  <div class="container mt-5">
+    <a asp-action="Create" class="btn btn-success" id="addCar-btn">Add new car</a>
+   
+      
+  
+    <table class="table">
+       
+        <thead>
+            <tr>
+            
+                <th>Mark</th>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Gear</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var cars in Model)
+            {
+                <tr>
+                    <td>@cars.Mark</td>
+                    <td>@cars.Model</td>
+                    <td>@cars.Year</td>
+                    <td>@cars.Gear</td>
+                    <td>@cars.Price</td>
+                    <td><img src="@cars.ImgUrl" /></td>
+                    <td>
+
+                        <a asp-route-id="@cars.CarId" class="btn btn-dark" asp-action="Edit">Edit</a>
+                        <a asp-route-id="@cars.CarId" class="btn btn-dark" asp-action="Delete">Delete</a>
+
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+  </div>

@@ -1,0 +1,89 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+/*  Views: Home - Index */
+
+#SearchCar-Card {
+    padding: 15px;
+    border-radius: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#SearchCar-Card input{
+    height:70px;
+    padding:5px;
+}
+
+#SearchCar-Card .btn{
+    height:70px;
+    width:80%;
+    color:#000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Views: Car - Index*/
+
+.table td img {
+    height: 50px;
+}
+
+#addCar-btn{
+    border-radius:0;
+ 
+}
+
+.table td a {
+    text-decoration:none;
+    color:white;
+    border-radius:0;
+    
+}
+
+
+
+/*Views: Car create and edit*/
+
+#Create-Edit-Car-Card {
+    max-width: 800px;
+    margin: auto;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#Create-Edit-Car-Card .card-header {
+    padding:12px;
+    text-align:center;
+}
+
+#Create-Edit-Car-Card input, #Create-Edit-Car-Card select{
+    height: 45px;
+    border-radius: 0;
+
+}
+
+#Create-Edit-Car-Card .btn{
+    width:100%;
+    padding:8px;
+    font-size:18px;
+}
