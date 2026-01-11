@@ -1,21 +1,82 @@
 ﻿
+
+
 <div class="container mt-5">
     <div class="card" id="SearchCar-Card">
         <div class="card-body">
-          <form asp-route-id="" asp-action="">
+          <form asp-action="Index" method="post">
               <div class="row">
                   <div class="col-md">
-                     <input class="form-control" name="" placeholder="Start date" /><br />
+                        <input class="form-control" id="datepickr" name="startdate" placeholder="Start date" /><br />
                   </div>
                     <div class="col-md">
-                        <input class="form-control" name="" placeholder="End date" />
-                    </div>
-                    <div class="col-md">
-                        <button type="button" class="btn btn-warning">Search</button>
-                    </div>
+                        <input class="form-control" id="datepickr" name="enddate" placeholder="End date" />
+                    </div> 
+                    <br />
+                    <div class="col-md">                
+                        <button type="submit" class="btn btn-warning">Search</button>
+                    </div>           
               </div>
           </form>
         </div>
     </div>
 </div>
+
+
+
+<div class="container mt-5">
+    <h2>@ViewBag.Message</h2>
+    @if (ViewBag.AvailableCar != null)
+    {
+        <div class="row">
+        
+                @foreach (var item in ViewBag.AvailableCar)
+                {
+                   
+                    <div class="col-md-4">
+                   
+                      <div class="card" id="Rental-Card">
+                        <img src="@item.ImgUrl" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <form asp-route-id="@item.CarId" asp-action="RentCar">
+                            <h5 class="card-title">@item.Mark @item.Model</h5>
+                            <p class="card-text">
+                                Year: @item.Year<br />
+                                Gear: @item.Gear<br />
+                                Price: @item.Price       
+                            </p>
+                            <button type="submit" class="btn btn-primary">
+                             Select this car
+                            </button>
+                            </form>
+                        </div>
+                           
+                        </div>
+
+                   
+                    </div>
+                
+                }
+           
+
+        </div>
+
+       
+    }
+
+    
+
+</div>
+
+@section Scripts{
+    <script>
+
+        flatpickr("#datepickr", {
+        dateFormat: "Y-m-d",
+         minDate: "today"
+        });
+
+    </script>
+}
+
 

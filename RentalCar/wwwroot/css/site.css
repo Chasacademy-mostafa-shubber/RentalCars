@@ -25,25 +25,54 @@ body {
 /*  Views: Home - Index */
 
 #SearchCar-Card {
-    padding: 15px;
+    padding: 20px;
     border-radius: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 #SearchCar-Card input{
-    height:70px;
-    padding:5px;
+    height:60px;
+    border-radius:0;
+    background-color:white;
 }
+
+#SearchCar-Card input::placeholder{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#565555;
+}
+
 
 #SearchCar-Card .btn{
-    height:70px;
-    width:80%;
+    height:60px;
+    width:100%;
     color:#000000;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius:0;
 }
 
-/* Views: Car - Index*/
+#Rental-Card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin:12px;
+}
 
+#Rental-Card .btn{
+    width:100%;
+    padding:6px;
+    border-radius:0;
+}
+
+#Rental-Card img{
+    height:250px;
+}
+
+/*Views: Home - RentalDetails*/
+
+#RentalDetails-Card{
+
+
+}
+/* Views: Car - Index*/
 .table td img {
     height: 50px;
 }

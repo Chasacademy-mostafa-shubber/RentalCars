@@ -9,6 +9,7 @@
         public string Gear { get; set; }
         public int Price { get; set; }
         public string ImgUrl { get; set; }
+        public List<Rental> Rentals { get; set; }
 
     }
 }
