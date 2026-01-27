@@ -1,0 +1,67 @@
+﻿@model Profile
+
+
+
+<div class="container mt-5">
+
+    <div class="card" id="Create-Edit-ProfileCard">
+        <div class="card-header">
+            <h3>Create profile</h3>
+        </div>
+        <div class="card-body">
+         <form asp-action="CreateProfile">
+         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row">
+             <div class="col-md">
+               <label asp-for="FullName"></label>
+               <input asp-for="FullName" class="form-control" />
+               <span asp-validation-for="FullName" class="text-danger"></span>
+             </div>
+                    <div class="col-md">
+                        <label asp-for="Address"></label>
+                        <input asp-for="Address" class="form-control" />
+                        <span asp-validation-for="Address" class="text-danger"></span>
+                    </div>
+
+            </div>
+                <div class="row">
+                    <div class="col-md">
+                        <label asp-for="City"></label>
+                        <input asp-for="City" class="form-control" />
+                        <span asp-validation-for="City" class="text-danger"></span>
+                    </div>
+                    <div class="col-md">
+                        <label asp-for="ZipCode"></label>
+                        <input asp-for="ZipCode" class="form-control" />
+                        <span asp-validation-for="ZipCode" class="text-danger"></span>
+                    </div>
+                   
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <label asp-for="Phone"></label>
+                        <input asp-for="Phone" class="form-control" />
+                        <span asp-validation-for="ZipCode" class="text-danger"></span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+               
+        </form>
+        </div>
+    </div>
+
+
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+

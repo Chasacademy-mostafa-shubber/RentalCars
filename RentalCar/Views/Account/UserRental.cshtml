@@ -1,0 +1,28 @@
+﻿@model List<Rental>
+
+
+<div class="container mt-5">
+
+    <div class="row">
+
+        @foreach(var item in Model)
+        {
+            <div class="col-md-3">
+
+                <div class="card">
+                    <img src="@item.Car.ImgUrl" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>Car: @item.Car.Mark @item.Car.Model</h5>
+                      <h6>Rental date: @item.StartDate.ToString("yyyy-MM-dd")
+                      - @item.EndDate.ToString("yyyy-MM-dd")</h6>
+                      <h6>Price: @item.TotalPrice/$</h6>
+                    </div>
+                </div>
+
+            </div>
+        }
+
+    </div>
+
+
+</div>

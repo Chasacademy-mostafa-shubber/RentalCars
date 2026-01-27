@@ -72,7 +72,9 @@ body {
 
 
 }
+
 /* Views: Car - Index*/
+
 .table td img {
     height: 50px;
 }
@@ -91,12 +93,11 @@ body {
 
 
 
-/*Views: Car create and edit*/
+/*Views: Car - create and edit*/
 
 #Create-Edit-Car-Card {
     max-width: 800px;
     margin: auto;
-    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -116,3 +117,58 @@ body {
     padding:8px;
     font-size:18px;
 }
+
+/*Views: Account - UserProfile */
+
+#UserProfile-Card {
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#UserProfile-Card .btn{
+    font-size:20px;
+
+}
+
+/*Views: Account - UserProfile */
+
+#Create-Edit-ProfileCard {
+    max-width: 700px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#Create-Edit-ProfileCard input {
+        height: 45px;
+        border: 1px solid #a9a8a8;
+        border-radius: 0px;
+}
+
+#Create-Edit-ProfileCard .btn {
+        font-size: 20px;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Views: Account - Index */
+
+#UserIndex-Card {
+    padding:20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius:0;
+    
+}
+
+#UserIndex-Card a{
+    text-decoration:none;
+}
+
+#UserIndex-Card h1 {
+    text-align:center;
+    color:#393b39;
+    font-family:'Times New Roman', Times, serif;
+}
+
