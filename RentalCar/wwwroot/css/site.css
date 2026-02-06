@@ -22,13 +22,34 @@ body {
 }
 
 
-/*  Views: Home - Index */
 
+
+#Navbar-image {
+    background-image: url('https://static0.topspeedimages.com/wordpress/wp-content/uploads/jpg/201806/wallpaper-of-the-day-4.jpg');
+    height: 550px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar-brand img{
+  
+    width:100px;
+}
+
+.nav-link{
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/*  Views: Home - Index */
 #SearchCar-Card {
     padding: 20px;
     border-radius: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 #SearchCar-Card input{
@@ -66,12 +87,7 @@ body {
     height:250px;
 }
 
-/*Views: Home - RentalDetails*/
 
-#RentalDetails-Card{
-
-
-}
 
 /* Views: Car - Index*/
 
