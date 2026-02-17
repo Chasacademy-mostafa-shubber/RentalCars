@@ -1,0 +1,46 @@
+﻿@model RegisterViewModel
+
+
+<div class="container mt-5">
+
+    <div class="card" id="Register-Login-Card">
+        <img src="https://www.1stformationsblog.co.uk/wp-content/uploads/2022/09/Shutterstock_1079243414.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <form asp-action="Register" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                <div class="row">
+                    <div class="col-md">
+                        <label asp-for="Email"></label>
+                        <input asp-for="Email" aria-required="true" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <label asp-for="Password"></label>
+                        <input asp-for="Password" aria-required="true" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <label asp-for="ConfirmPassword"></label>
+                        <input asp-for="ConfirmPassword" aria-required="true" class="form-control" />
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md">
+                        <button type="submit" class="btn btn-success">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

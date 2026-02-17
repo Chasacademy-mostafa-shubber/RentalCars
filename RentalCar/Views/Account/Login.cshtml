@@ -1,0 +1,40 @@
+﻿@model LoginViewModel
+
+
+<div class="container mt-5">
+
+    <div class="card" id="Register-Login-Card">
+        <img src="https://thumbs.dreamstime.com/b/vector-illustration-isolated-white-background-login-button-icon-login-icon-button-126999961.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <form asp-action="Login" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                <div class="row">
+                    <div class="col-md">
+                        <label asp-for="Email"></label>
+                        <input asp-for="Email" aria-required="true" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <label asp-for="Password"></label>
+                        <input asp-for="Password" aria-required="true" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <br />
+                <div class="row">
+                    <div class="col-md">
+                        <button type="submit" class="btn btn-success">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

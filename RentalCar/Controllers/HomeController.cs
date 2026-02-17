@@ -111,6 +111,8 @@ namespace RentalCar.Controllers
             return RedirectToAction("Index");
         }
 
+
+        [Authorize(Roles = "Admin")]
         public IActionResult Privacy()
         {
             return View();
